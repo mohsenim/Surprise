@@ -25,7 +25,7 @@ def pos_tag_counter(wordtaglist):
                 count += 1
         return count
 
-    counts = np.zeros(len(wordtaglist) // parameters.pos_tag_segmentation_size)
+    counts = np.zeros(len(wordtaglist) // parameters.postag_segmentation_size)
     for i in range(counts.size):
         segment = wordtaglist[i * parameters.pos_tag_segmentation_size: (i + 1) * parameters.pos_tag_segmentation_size]
         c = _counter(segment, parameters.target_postag)

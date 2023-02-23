@@ -1,12 +1,12 @@
 # Analyzing Unpredictability and Surprise in Text
-This repository contains codes that calculate Shannon Entropy (ShEn) and Approximate Entropy for texts in the folder _corpus_. Texts should be annotated with POSTags (look at the sample texts). Each subfolder in _corpus_ is considered as a text categoty. 
-To run the code set the parameters and run _Main.py_.
-Parameters can be set in _parameters.py_. The main parameters are:
-* _working_dir_: where the final feature file is saved.
+This repository contains codes that calculate Shannon Entropy (ShEn) and Approximate Entropy (ApEn) for texts in the folder _corpus_. Texts should be annotated with POSTags (look at the sample texts). Each subfolder in _corpus_ is considered as a text categoty. 
+To run the code, set the parameters in _parameters.py_ and run _Main.py_.
+The main parameters are:
+* _working\_dir_: where the final feature file is saved.
 * _corpus\_main\_dir: the path to the text files
-* _text\_property_: the entropy measures can be applied to series of sentence length or series of POSTags frequencies in windows of texts. In the latter case, we will have the following parameters as well.
-* _pos\_tag\_segmentation\_size_: the size of windows 
-* _traget\_postag_: the postag(s) that its ferquency is counted. 
+* _text\_property_: the entropy measures can be applied to series of sentence lengths or to series of POSTags frequencies in windows of texts. In the latter case, you should set the following parameters as well.
+* _postag\_segmentation\_size_: the size of windows 
+* _target\_postag_: the postag(s) that its ferquency is counted. 
 * _postag\_word\_interval_: is the interval between each word and its POSTag.
 * _features\_file\_path_: the name of the file containing ShEn and ApEn values in the end.
 
