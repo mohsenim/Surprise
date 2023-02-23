@@ -7,7 +7,7 @@ The main parameters are:
 * _text\_property_: the entropy measures can be applied to series of sentence lengths or to series of POSTags frequencies in windows of texts. In the latter case, you should set the following parameters as well.
 * _postag\_segmentation\_size_: the size of windows 
 * _target\_postag_: the postag(s) that its ferquency is counted. 
-* _postag\_word\_interval_: is the interval between each word and its POSTag.
+* _postag\_word\_interval_: the interval between each word and its POSTag.
 * _features\_file\_path_: the name of the file containing ShEn and ApEn values in the end.
 
 
