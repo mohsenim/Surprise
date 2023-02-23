@@ -15,7 +15,7 @@ class TextPropertyNames(Enum):
 text_property = TextPropertyNames.SENT_LENGTH  # or TextPropertyNames.SENT_LENGTH
 pos_tag_segmentation_size = 25  # size of boxes/windows
 target_postag = 'NN'  # We use a regext matching, meaning that nn counts nn and nnp and so on.
-pos_word_tag_interval = '_$$_'
+postag_word_interval = '_$$_'
 
 # name of the features file
 feature_filename_extention = TextPropertyNames.SENT_LENGTH.value if text_property == TextPropertyNames.SENT_LENGTH \

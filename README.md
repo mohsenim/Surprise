@@ -1,22 +1,17 @@
 # Analyzing Unpredictability and Surprise in Text
-To analyze unpredictability and "surprise" in text we calculated two entropy measures:
-
-* Shannon Entropy (ShEn) as a global measure of unpredictability
-
-* Approximate Entropy (ApEn) as a local measure of surprise (unpredictability in a specific context)
-
-This repository contains codes that calculate ShEn and ApEn for texts in the folder _corpus_. Texts should be annotated with POSTags (look at the sample texts). Each subfolder in _corpus_ is considered as a text categoty. 
+This repository contains codes that calculate Shannon Entropy (ShEn) and Approximate Entropy for texts in the folder _corpus_. Texts should be annotated with POSTags (look at the sample texts). Each subfolder in _corpus_ is considered as a text categoty. 
 To run the code set the parameters and run _Main.py_.
 Parameters can be set in _parameters.py_. The main parameters are:
 * _working_dir_: where the final feature file is saved.
-* _corpus_main_dir: the path to the text files
-* _text_property_: the entropy measures can be applied to series of sentence length or series of POSTags frequencies in windows of texts. In the latter case, we will have the following parameters as well.
-* _pos_tag_segmentation_size_: the size of windows 
-* _traget_postag_: the postag(s) that its ferquency is counted. 
-* _postag_word_interval_: is the interval between each word and its POSTag.
-* _features_file_path_: the name of the file containing ShEn and ApEn values in the end.
+* _corpus\_main\_dir: the path to the text files
+* _text\_property_: the entropy measures can be applied to series of sentence length or series of POSTags frequencies in windows of texts. In the latter case, we will have the following parameters as well.
+* _pos\_tag\_segmentation\_size_: the size of windows 
+* _traget\_postag_: the postag(s) that its ferquency is counted. 
+* _postag\_word\_interval_: is the interval between each word and its POSTag.
+* _features\_file\_path_: the name of the file containing ShEn and ApEn values in the end.
 
-Using these two measures, we analyzed texts in three different text categories: canonical/fictional, non-canonical/fictional and  non-fictional texts.
+
+ShEn is a global measure of unpredictability and ApEn a local measure of surprise (unpredictability in a specific context). Using these two measures, we analyzed texts in three different text categories: canonical/fictional, non-canonical/fictional and  non-fictional texts.
 We showed that canonical and non-canonical texts differ in sequential structure, while inter-genre differences (fictional vs. non-fictional) are a matter of the overall distribution of local
 frequencies [1].
 

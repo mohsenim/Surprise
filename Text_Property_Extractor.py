@@ -16,7 +16,7 @@ def pos_tag_counter(wordtaglist):
     def _counter(wordtaglist, target_postag):
         count = 0
         for wordtag in wordtaglist:
-            postag_split = wordtag.split(parameters.pos_word_tag_interval)
+            postag_split = wordtag.split(parameters.postag_word_interval)
             if len(postag_split) < 2:
                 logging.warning('An error in POS-tagged file!', wordtaglist)
                 continue
